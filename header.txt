@@ -1,0 +1,50 @@
+﻿<meta charset="utf-8">
+    <title>Карта корпуса</title>
+    <script type="text/javascript" src="jquery-min.js"></script>
+    <script type="text/javascript" src="jquery-maphilight.js"></script>
+    <script type="text/javascript">$(function() {
+        $('.map').maphilight();
+    });
+    </script>
+	<script type="text/javascript">
+	        function info(id){
+	        	var obj = document.getElementById (id);
+	        	var d_str = obj.title;
+	        	var dep = obj.getAttribute('data-dep');
+	        	var fac = obj.getAttribute('data-fac');
+	        	d_str = d_str.concat(", кафедра ", dep, ", факультет ", fac);
+	        	document.myform.descr.value = d_str;
+	            }
+	</script>
+	<script type="text/javascript">
+	        function highlight(){
+	        	var all = document.getElementsByTagName("area");
+	        	for (var i = 0; i < all.length; i++)
+	        	{
+	        		$(all[i]).mouseout();
+	        	}
+
+	        	var idd = document.myform.stage.value;
+	        	var obj = document.getElementById (idd);
+	               $(obj).mouseover();
+	            info(idd);
+	            }
+	</script>
+		<script type="text/javascript">
+	        function highlight_dep(){
+	        	var a = document.myform.stage.value;
+	        	a = a.toLowerCase();
+	        	var all = document.getElementsByTagName("area");
+	        	for (var i = 0; i < all.length; i++)
+	        	{
+	        		var dep = all[i].getAttribute('data-dep');
+				if(dep != null)
+				{
+	        			if(dep.indexOf(a) > -1)
+	        			{
+	        				$(all[i]).mouseover();
+	        			}
+				}
+	        	}
+	            }
+	</script>

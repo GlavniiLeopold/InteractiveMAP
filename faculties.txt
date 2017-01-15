@@ -1,0 +1,64 @@
+﻿{
+    faculty: "компьютерных технологий и информатики",
+    abbreviation: "ФКТИ",
+    departments:
+    [
+        {
+            dep_name: "высшей математики 2",
+            abbreviation: "ВМ-2",
+            auditorium : []
+        },
+        {
+            dep_name: "математического обеспечения электронно вычислительных машин",
+            abbreviation: "МоЭВМ",
+            auditorium : []
+        }        
+    ]
+}
+
+{
+    faculty: "электроники",
+    abbreviation: "ФЭЛ",
+    departments:
+    [
+        {
+            dep_name: "физики",
+            auditorium : []
+        }
+    ]
+}
+
+{
+    faculty: "гуманитарный",
+    abbreviation: "ГФ",
+    departments:
+    [
+        {
+            dep_name: "иностранных языков",
+            auditorium : []
+        }      
+    ]
+}
+
+{
+    faculty: "администрация",
+    departments:
+    [
+        {
+            dep_name: "профком",
+            auditorium : []
+        },
+        {
+            dep_name: "издательство",
+            auditorium : []
+        },
+        {
+            dep_name: "жео",
+            auditorium : []
+        },
+	{
+            dep_name: "ректорат",
+            auditorium : []
+        }      
+    ]
+}

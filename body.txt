@@ -1,0 +1,13 @@
+﻿</map>
+
+      <form name="myform" action="javascript:void(0);">
+         <input type="text" name="stage" size="20" />
+         <button id="myButton1" onclick="highlight()">Поиск аудитории</button>
+         <button id="myButton2" onclick="highlight_dep()">Поиск кафедры</button>
+         <br><br>
+         <textarea id="descr" rows="4" cols="50">
+          
+		 </textarea>
+      </form>
+
+</p>
